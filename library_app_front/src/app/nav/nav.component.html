@@ -1,0 +1,20 @@
+
+
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">Home</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <a routerLink= "/Signin"*ngIf= "!_auth.loggedIn()" class="nav-item active nav-link">Sign in</a>
+                <a routerLink= "/login" *ngIf= "!_auth.loggedIn()"class="nav-item active nav-link">Login</a>
+                <a routerLink= "/addbook" *ngIf= "_auth.loggedIn()"class="nav item active nav-link">Add book</a>
+                <a  *ngIf= "_auth.loggedIn()"class="nav-item active nav-link" (click)= "logoutUser()">Logout</a>
+            </ul>
+            <form class="search" action="search.php"> 
+      <input name="q" placeholder="Search..." type="search">
+    </form>
+        </div>
+    </nav>

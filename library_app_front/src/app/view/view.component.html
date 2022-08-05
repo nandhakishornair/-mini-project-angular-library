@@ -1,0 +1,32 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col"> 
+     <ng-container *ngFor="let item of books" >
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{item.title}}</h5>
+          <p class="card-text">{{item. author}}</p>
+          <p class="card-text">{{item.about}}</p>
+        </div>
+      </div>
+     </ng-container>
+    </div>
+  </div>
+</div>
+--><h3 class="asa">Book List</h3>
+   <div class="row card-group">
+    
+    <div class="col-4"  *ngFor="let book of books">
+        <div class="card">
+          <img [src]="book.image" >
+          <h5 class="card-title">{{book.title}}</h5>
+          <p class="card-text">{{book.author}}</p>
+          <p class="card-text">{{book.about}}</p>
+          <button class="btn btn-warning" style="cursor:pointer" *ngIf= "_auth.loggedIn()" (click)= "editbook(book)" > Edit</button>
+          <button class="btn btn-danger" style="cursor:pointer"*ngIf= "_auth.loggedIn()" (click)= "deletebook(book)"> Delete</button> 
+                  
+            <!-- <a [routerLink]="['/books']">{{books.title}}</a> -->
+        </div>
+    </div>
+  </div>

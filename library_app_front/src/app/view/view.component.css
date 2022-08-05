@@ -1,0 +1,20 @@
+.card{
+  margin: 2%;
+  background-color: rgb(219, 219, 179);
+  
+  }
+  .row{
+    background-color: antiquewhite;
+    padding-top: 10%;
+    padding-bottom:10% ;
+  }
+  h3{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .asa{
+    background-color: rgb(222, 222, 239); 
+  }
+  img{
+    height:400px;
+  }

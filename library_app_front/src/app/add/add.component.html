@@ -1,0 +1,39 @@
+<div class='card'>
+<form (ngSubmit)="AddBook()">
+<div class='card-body col-md-6'>            
+  <div class='table-responsive'>
+    <table class='table'>       
+    
+      <tbody> 
+        <h4 style="color:rgb(0, 89, 255) ;">Add Book</h4>  
+        <tr>
+          <td> <label><strong>Book Id</strong></label></td>
+          <td><input type="text" class="form-control col-md-9"name="p_Tilte" [(ngModel)]="books.bookId"/></td>                  
+        </tr> 
+          <tr>
+            <td><label><strong>Title</strong></label></td>
+              <td><input type="text" class="form-control col-md-9"name="p_Tilte" [(ngModel)]="books.title"/></td>                  
+            </tr>   
+            <tr>
+              <td><label><strong>Author</strong></label></td>
+                <td><input type="text" class="form-control col-md-9"name="p_name" [(ngModel)]="books.author"/></td>                  
+              </tr>  
+              <tr>
+                <td><label><strong>Image Url</strong></label></td>
+                <td><input type="text"class="form-control col-md-9" name="p_code" [(ngModel)]="books.image"/></td>                  
+              </tr>  
+              <tr>
+                <td><label><strong>About</strong></label></td>
+                <td><input type="text" class="form-control col-md-9"name="p_date" [(ngModel)]="books.about"/></td>                  
+              </tr>   
+              <tr>
+                <td></td>
+                <td><input type="submit" class="btn btn-success" value="Submit" /></td>                  
+              </tr>             
+      </tbody>
+    </table>
+  </div>
+</div>
+</form>
+</div>
+
